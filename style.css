@@ -2,3 +2,9 @@ p {
   color: yellow;
   display: block;
   font-weight: 500; }
+
+
+  *{
+    font-family: 'Noto Sans KR', sans-serif ;
+  }
+

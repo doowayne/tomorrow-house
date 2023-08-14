@@ -1,0 +1,104 @@
+/*
+
+* fixture------------------------------- sm
+* mobile (< 768px)---------------------------
+* # of columns ------------------------4
+* guitter -------------------20px
+* margin --------------------5px
+* container-size --------------------- 100% - (5px *2)
+
+
+*/
+
+/*
+* fixture ------------------------- md
+* tablet (> 768px)---------------------------
+* # of columns ------------------------12
+* guitter -------------------20px
+* margin --------------------30px
+* container-size --------------------- 100% - (30px *2)
+* max-container-size ------------------- 968px
+
+
+*/
+
+
+/*
+*  fixture --------------------- lg
+* desktop (> 1200px)---------------------------
+* # of columns ------------------------12
+* guitter -------------------20px
+* unit---------------------75px
+* margin -------------------- auto
+* container-size --------------------- 1140px
+* max-container-size ----------------- 1140px
+
+
+*/
+
+$guitter: 20px;
+
+$sm-columns: 4;
+$sm-margin: 5px;
+
+$md-breakpoints : 768px;
+$md-columns: 12;
+$md-margin: 30px;
+$md-max-container: 960px + $md-margin * 2;
+
+$lg-breakpoints: 1200px;
+$lg-columns: 12;
+$lg-unit: 75px;
+$lg-max-container: ($lg-unit + $guitter) * $lg-columns;
+
+@debug ($lg-unit + $guitter) * $lg-columns;
+
+
+.container {
+    width: 100%;
+    padding: 0 $sm-margin;
+    margin: 0 auto;
+
+
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+
+    [class^='col-']{
+         padding: 0 $guitter / 2;
+    }
+
+    @for $i from 1 through $sm-columns {
+      .col-sm-#{$i} {
+        width: percentage($i / $sm-columns);
+      }
+    }
+
+
+    @media (min-width: $md-breakpoints){
+        max-width: $md-max-container;
+        padding: 0 $md-margin;
+
+        @for $i from 1 through $md-columns {
+            .col-md-#{$i} {
+              width: percentage($i / $md-columns);
+            }
+          }
+
+    }
+
+    @media (min-width: $lg-breakpoints){
+        max-width: $lg-max-container;
+        padding: 0;
+
+        @for $i from 1 through $lg-columns {
+            .col-lg-#{$i} {
+              width: ($lg-unit + $guitter) * $i;
+            }
+          }
+
+    }
+}

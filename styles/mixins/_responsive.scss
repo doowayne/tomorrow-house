@@ -1,0 +1,14 @@
+@mixin responsive($screen) {
+    @if ($screen == 'T'){
+        @media (min-width: $md-breakpoint) {
+            @content;
+        }
+    }
+
+    @if ($screen == 'D') {
+        @media (min-width: $lg-breakpoint) {
+            @content;
+        }
+    }
+}
+

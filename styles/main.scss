@@ -1,11 +1,18 @@
+<<<<<<< HEAD
 @import "./constants/colors";
 @import "./constants/typography";
 @import "./constants/breakpoint";
+=======
+@import './constants/colors';
+@import './constants/typography';
+@import './constants/breakpoint';
+>>>>>>> 68ff61e20b31135730fc4c535d93a1b7ee6bbbcc
 
 @import "./base/fonts";
 @import "./base/normalize";
 @import "./base/reset";
 
+<<<<<<< HEAD
 @import "./mixins/text-style";
 @import "./mixins/responsive";
 @import "./mixins/positions";
@@ -19,3 +26,12 @@
 @import "./modules/forms";
 
 @import "./layouts/grid";
+=======
+@import './mixins/text-style';
+@import './mixins/responsive';
+@import './mixins/positions';
+@import './mixins/flexbox';
+
+@import './layouts/grid';
+
+>>>>>>> 68ff61e20b31135730fc4c535d93a1b7ee6bbbcc

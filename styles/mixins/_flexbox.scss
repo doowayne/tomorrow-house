@@ -8,7 +8,7 @@ $flex-map: (
   //key , value
 );
 
-@function _get-flex-value() {
+@function _get-flex-value($key) {
   @return map-get($flex-map, $key);
 }
 
@@ -20,8 +20,8 @@ $flex-map: (
 
 @mixin inline-flexbox($jc: center, $ai: center) {
   display: inline-flex;
-  //align-items: _get-flex-value($ai);
-  //justify-content: _get-flex-value($jc);
+  align-items: _get-flex-value($ai);
+  justify-content: _get-flex-value($jc);
 }
 
 @mixin column-flexbox($jc: center, $ai: center) {

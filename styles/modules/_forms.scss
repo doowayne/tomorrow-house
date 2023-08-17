@@ -26,7 +26,8 @@
     }
 }
 
-.form-select{
+.form-select,
+.form-input {
     @extend %form-base;
 }
 
@@ -65,11 +66,11 @@
     .form-input{
         padding-left: 40px;
     }
-
     .ic-search{
         @include pos-center-y;
-        left: 10px;
         font-size: 20px;
-        color: $secondary;
+        left: 10px;
+        
+        
     }
 }

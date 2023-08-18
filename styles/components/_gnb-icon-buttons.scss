@@ -1,0 +1,22 @@
+.gnb-icon-button {
+    @include flexbox;
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+    color: $secondary;
+    transition: color .2s ease-in-out;
+
+    &.is-menu{
+        color: $blue;
+
+        &:active{
+            color: $blue-dark;
+            
+        }
+    }
+
+    &:active {
+        color: $primary;
+    }
+
+ }

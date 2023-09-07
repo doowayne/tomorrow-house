@@ -1,0 +1,111 @@
+.gnb {
+    position: relative;
+    border-bottom: 1px solid $border;
+
+    &-wrapper{
+        @include flexbox(between);
+        height: 50px;
+
+    }
+
+    &-right {
+        .button-group {
+            @include flexbox(right);
+        }
+
+        .gnb-icon-button.is-search{
+            margin-right: 4px;
+        }
+
+    }
+
+
+    &-menu-button{
+      color: $blue;
+    }
+
+    .logo {
+        @include pos-center;
+
+        a {
+            display: block;
+        }
+        img {
+            display: block;
+            width: auto;
+            height: 20px;
+
+        }
+    }
+
+
+    @include responsive(T) {
+        &-left{
+            @include flexbox(start);
+        }
+
+        &-right {
+            @include flexbox(right);
+
+            .button-group{
+                margin-right: 24px;
+
+                .gnb-icon-button{
+                    margin-right: 8px;
+                }
+            }
+
+            .gnb-auth{
+                margin-left: 8px;
+                a{
+                    @include text-style(14, $secondary);
+                    font-weight: 700;
+
+                    &:first-child{
+                        margin-right: 8px;
+                    }
+
+                    &:hover{
+                        color: $blue;
+
+                    } 
+                }
+                
+            }
+        }
+
+        &-wrapper{
+            height: 80px;
+        }
+
+        .logo {
+            position: static;
+            transform: none;
+            margin-right: 32px;
+
+            img{
+                height: 24px;
+            }
+        }
+
+        .btn-primary{
+            width: 88px;
+            i{
+                margin-left: 4px;
+            }
+        }
+        
+    }
+
+    @include responsive(D) {
+        //1200px 
+        &-right {
+            .input-group {
+                width: 264px;
+                margin-right: 24px;
+            }
+        }
+
+    }
+
+}

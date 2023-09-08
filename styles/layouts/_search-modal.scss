@@ -18,7 +18,7 @@
     }
 
     &-form {
-        @include flexbox(between);
+        @include flexbox(between); 
 
         .input-group {
             flex-grow: 1;

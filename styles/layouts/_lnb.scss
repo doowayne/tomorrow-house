@@ -1,17 +1,17 @@
 .lnb {
-    overflow-x: auto;
-    width: 100%;
-    border-bottom: 1px solid $border;
+   
+    $lnb-link-padding: 8px;
+    $grid-margin: $sm-margin + $guitter / 2;
 
-    &::-webkit-scrollbar {
-        display: none;
-    
-      }
+    @include no-scrollbar;
+    overflow-x: auto;
 
     &-list {
         @include inline-flexbox(start);
-        position: relative;
-        left: -8px;
+        height: 40px;
+        padding: 0 #{$grid-margin -  $lnb-link-padding};
+        margin-left: -#{$grid-margin};
+        border-bottom: 1px solid $border;
         white-space: nowrap;//inline-flex가 각 컨텐츠의 내용의 크기를 가지고 nowrap을 사용해서
         
 
@@ -31,18 +31,15 @@
         }
 
         a {
-            @include text-style(13, $dark);
             @include inline-flexbox;
+            @include text-style(13, $dark);
             height: 40px;
-            padding: 0 8px;
+            padding: 0 $lnb-link-padding;
             font-weight: 700;
-
+            border-bottom: 2px solid transparent;
 
         }
 
-        .ic-new {
-            color: $red;
-        }
     }
 
 

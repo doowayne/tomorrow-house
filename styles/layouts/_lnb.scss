@@ -1,12 +1,11 @@
 .lnb {
-    $lnb-height-sm: 40px;
-    $lnb-height-md: 50px;
-
+ 
     $lnb-link-padding: 8px;
     $grid-margin: $sm-margin + $guitter / 2;
 
     @include no-scrollbar;
     overflow-x: auto;
+    background-color: $white;
 
     &-list {
         @include inline-flexbox(start);
@@ -59,7 +58,7 @@
             height: auto;
             padding: 0;
             margin-left: 0;
-            border-bottom: 0;
+            border-bottom: none;
         }
 
         &-item {

@@ -1,0 +1,51 @@
+.lnb {
+    overflow-x: auto;
+    width: 100%;
+    border-bottom: 1px solid $border;
+
+    &::-webkit-scrollbar {
+        display: none;
+    
+      }
+
+    &-list {
+        @include inline-flexbox(start);
+        position: relative;
+        left: -8px;
+        white-space: nowrap;//inline-flex가 각 컨텐츠의 내용의 크기를 가지고 nowrap을 사용해서
+        
+
+    }
+
+    &-item {
+        flex-shrink: 0;
+
+        &.is-active {
+            a {
+                color: $blue;
+                border-bottom: 2px solid $blue;
+            }
+            
+
+
+        }
+
+        a {
+            @include text-style(13, $dark);
+            @include inline-flexbox;
+            height: 40px;
+            padding: 0 8px;
+            font-weight: 700;
+
+
+        }
+
+        .ic-new {
+            color: $red;
+        }
+    }
+
+
+
+
+}

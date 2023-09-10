@@ -24,7 +24,8 @@
     
   </head>
  <body>
-    <header class="gnb">
+    <header class="global-header">
+      <div class="gnb">
         <div class="container"><!--grid-system-->
           <div class="row">
             <div class="col-sm-4">
@@ -49,10 +50,45 @@
                   </button>
                 </div>
                 <div class="gnb-right">
-                  <div class="input-group lg-only">
+                 <div class="gnb-search lg-only">
+
+                  <div class="input-group">
                     <i class="ic-search" aria-hidden></i>   
                     <input type="text" class="form-input" placeholder="스토어검색">
                   </div>
+                  <section class="search-history">
+                    <header class="search-history-header">
+                      <h2 class="title">최근 검색어</h2>
+                      <button type="button">전체 삭제</button>
+            
+                    </header>
+            
+                      <!--최근 검색어가 존재 할 경우 -->
+                    <div class="search-history-content">
+                      <ol class="search-history-list">
+                        <li class="search-history-item">
+                          <button class="word-button" type="button">김버그</button>
+                          <button class="delete-button" type="button" aria-label="검색어 삭제">
+                            <i class="ic-close"></i>
+                          </button>
+                        </li>
+                        <li class="search-history-item">
+                          <button class="word-button" type="button">버그</button>
+                          <button class="delete-button" type="button" aria-label="검색어 삭제">
+                            <i class="ic-close"></i>
+                          </button>
+                        </li>
+                        <li class="search-history-item">
+                          <button class="word-button" type="button">튕김버그</button>
+                          <button class="delete-button" type="button" aria-label="검색어 삭제">
+                            <i class="ic-close"></i>
+                          </button>
+                        </li>
+                      </ol>
+                    </div>
+                  </section>
+
+                 </div>
                   <!--로그인을 한 경우-->
                  <div class="button-group">
                     <button class="lg-hidden gnb-icon-button is-search" type="button" aria-label="검색창 열기 버튼">
@@ -72,8 +108,8 @@
                       <strong class="badge">5</strong>
                     </a>
             
-                   <div class="my-menu sm-hidden">
-                    <button class="my-menu-button is-active gnb-avatar-button" type="button" aria-label="마이메뉴 열기 버튼">
+                   <div class="my-menu is-active sm-hidden">
+                    <button class="my-menu-button  gnb-avatar-button" type="button" aria-label="마이메뉴 열기 버튼">
                       
                         <img src="./assets/images/img-user-01.jpg" alt="사달라 아저씨">
                      
@@ -117,7 +153,114 @@
             </div>
           </div>
         </div>
+      </div>
+
+       
+    <!----------------------------lnb 마크업-------------------------->    
+    <nav class="lnb">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+
+            <h1 class="visually-hidden">스토어 메뉴</h1>
+
+              <ul class="lnb-list">
+                  <li class="lnb-item is-active">
+                    <a href="/">스토어</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="/">카테고리</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="/">신혼가구</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="/">베스트</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="/">오늘의딜</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="/">연휴특가</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="/">월동준비</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="/">리퍼마켓</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="/">
+                      기획전
+                      <i class="ic-new" lang="en" area-label="New"></i> 
+                    </a>
+                  </li>
+                </ul>
+
+          </div>
+        </div>
+      </div>
+
+    </nav>
+    <!----------------------------lnb 마크업-------------------------->
     </header>
+
+    <main class="product-show">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, tenetur nesciunt veniam doloremque sequi porro beatae voluptatum dolorum voluptas in maiores dolor quae blanditiis praesentium ipsa repellat dicta pariatur saepe eveniet officia reiciendis facilis quos quam! Sed est qui laborum dolor, inventore doloremque et odio praesentium consequatur fugit dolorem voluptate eligendi veritatis iste fuga nesciunt nam itaque eius dignissimos. Laborum eius labore illo ut iste explicabo. Quaerat quo rerum non illo repellendus sit laborum quam, doloremque, dolore aliquam et blanditiis commodi quas cum eius enim dolorum est modi velit quasi itaque repellat sint mollitia veniam? Iste magnam sit, accusantium atque labore voluptatibus ratione iure quis cumque, aspernatur molestiae sequi voluptatum, delectus beatae at eum commodi modi! Repellat quibusdam dolorem magnam, placeat error nisi inventore mollitia in repudiandae quas esse sit rem nostrum? Eius delectus accusantium ex non voluptatum quisquam nulla quia, inventore ab repudiandae ipsum deleniti molestias, neque id possimus! Earum explicabo unde voluptates animi, recusandae aut temporibus? Excepturi sed quibusdam accusamus sunt, perspiciatis deserunt aliquam, at molestiae sint omnis expedita ducimus. Omnis eligendi voluptatem obcaecati ab laboriosam? Quibusdam nobis quaerat in, soluta dolorum est distinctio maiores repellat quos repudiandae a consequatur autem tenetur. Quo, quaerat! Omnis repellendus consequatur repellat iusto nihil et necessitatibus culpa accusamus sed dignissimos minus corporis rem, maiores ipsam maxime nam atque repudiandae itaque optio, quibusdam quam modi? Ducimus aperiam praesentium, explicabo quod qui aut cupiditate error ut, alias autem neque quisquam molestiae mollitia ad? Eum, velit in perspiciatis quis at reprehenderit ratione minima eveniet tempora nam maxime voluptates quisquam ipsum debitis inventore veritatis doloribus impedit assumenda consequatur officiis necessitatibus esse id. Debitis voluptates maxime temporibus enim dolores dolorem ullam unde, numquam beatae perferendis culpa ab at quia sapiente, adipisci maiores officia, harum minima. Provident fuga in odio exercitationem quam eaque ducimus tenetur quidem quia autem.</p>
+                <p>Eius sed temporibus quae? Perferendis quibusdam culpa dolor excepturi nam iusto illo, dolorem modi officia molestias ad. Eum, nesciunt. Modi mollitia aliquam veniam? Sit sed suscipit porro accusamus ipsa? Sequi, eius! Nam velit totam tempora iure illo. Modi obcaecati architecto cupiditate debitis harum fugiat fuga reiciendis quidem velit a neque assumenda vero, culpa at error ducimus nulla delectus reprehenderit qui eaque totam ipsa inventore quas! Praesentium fugit dolorum illo consectetur doloribus distinctio ea voluptatibus accusantium dolore facere neque corrupti ex fugiat corporis architecto porro enim quam vero possimus sapiente nihil saepe, veritatis eaque consequatur. Omnis illo dolores adipisci debitis suscipit asperiores error possimus neque qui, rerum saepe consequatur minus ipsum corrupti corporis architecto maxime! Ut rem odio reiciendis temporibus quaerat adipisci id quas esse at, commodi minima nobis maxime, molestiae delectus. Doloribus modi excepturi dolorum ad, adipisci eligendi nisi laborum natus fuga molestias voluptatibus alias, asperiores explicabo. Optio aperiam ut molestiae asperiores, quidem aspernatur doloremque voluptas vitae natus libero reiciendis, sapiente nobis, error aut unde quibusdam. Exercitationem, corporis distinctio quae aliquam repellendus laborum quibusdam corrupti illum libero dignissimos tenetur consectetur totam vel tempora commodi? Libero magni magnam illum similique repudiandae temporibus, doloremque ducimus quo delectus! Assumenda, commodi. Dolore molestiae corrupti, blanditiis aliquam error voluptate iusto aspernatur pariatur et. Dolore aut quam iste repellat quis repellendus natus, harum voluptatum sed rerum cupiditate non alias magni dignissimos omnis veritatis, odio eaque accusantium id? Quaerat doloribus accusantium odit temporibus deserunt, perspiciatis recusandae numquam tempora sapiente dolore facere, voluptatibus, perferendis blanditiis delectus culpa libero. Dicta, numquam commodi! Fugiat totam dignissimos ex beatae tempore eligendi consequuntur repellat porro illo consectetur atque praesentium corporis, aliquid sequi labore cumque quo sint autem quam nisi! Quo nemo aperiam ratione maxime similique temporibus numquam ab eveniet accusamus, accusantium, at quasi libero molestias voluptatibus eius. Adipisci modi delectus voluptates asperiores.</p>
+                <p>Laudantium natus perferendis accusamus tempora, ab dolorem aliquid necessitatibus vero quos hic tenetur dignissimos modi nostrum sit? Voluptatum fugit ab corrupti voluptatibus quis dolore ex, iusto cupiditate modi atque quasi recusandae quam quod libero, molestiae accusamus earum blanditiis! Suscipit et ex cupiditate distinctio voluptas doloremque voluptatibus eligendi ab aliquam neque tempora, nobis pariatur! Dolores vero error sint cupiditate aut quae perspiciatis id veritatis illo asperiores quisquam eos laboriosam, quibusdam ducimus consequatur, quam libero natus. Officia est recusandae possimus! Suscipit magnam, rerum fugit, molestias consequuntur odit odio itaque aperiam nam sint in eius sit facere illum autem. Et consequuntur perspiciatis molestiae libero doloremque sequi in a minima. Modi totam quisquam fugit sed id vel? Sint enim repellat eaque tempore magni magnam at repellendus, doloribus voluptas quae harum inventore distinctio et quo? Magnam expedita quod eius aperiam assumenda, placeat dolor dolorum, quam dicta nisi illo. Dignissimos temporibus veniam mollitia, sunt id odit illo itaque laboriosam accusamus reiciendis perferendis libero dicta, ut aperiam! Saepe modi earum illo itaque autem ad quasi neque, eveniet impedit fugiat corporis quae! Tenetur voluptate architecto vel dignissimos ad excepturi, velit aperiam cum minima doloribus voluptates alias labore reprehenderit facilis corporis non minus hic nesciunt amet impedit eveniet veritatis, repellat sit omnis. Molestiae officia et suscipit molestias? Repellat cum rerum eligendi dolorum atque quod! Minima aliquid consequuntur eius repellat at eligendi nostrum consequatur nemo quam vitae quos ex, iusto totam enim, ab praesentium velit fuga unde quas quisquam nihil atque officiis fugiat! Recusandae magni neque accusamus exercitationem error dolore culpa, optio repellendus alias accusantium fuga labore ipsum harum, minima quibusdam tempore. Consequatur natus cumque aspernatur sit ipsam modi nostrum nulla dolore commodi quas, repellendus eligendi quidem vel at optio in culpa incidunt omnis dolores. Ea laudantium eligendi et laboriosam enim. In sed veritatis animi, numquam incidunt ratione nihil voluptatum?</p>
+                <p>Veniam a hic sapiente quis ut tempora, repellat necessitatibus iste ab laboriosam officiis provident unde, veritatis neque, culpa nemo eaque natus alias quae corporis vel debitis soluta enim? Quae dolorum nesciunt possimus quibusdam cupiditate sit eligendi laudantium totam ad! Ut est nesciunt asperiores suscipit distinctio, expedita illo incidunt quod architecto repudiandae nam, magnam assumenda labore. Saepe fuga recusandae sunt quo illum ipsam modi necessitatibus exercitationem, laudantium soluta reprehenderit optio incidunt placeat dolor blanditiis? Expedita dignissimos unde explicabo laudantium consequatur? Soluta rerum placeat nesciunt totam repellat dolorem, quam deleniti assumenda quis ut maxime officiis illum ad vel voluptatem eveniet earum ipsa maiores a. Dignissimos natus inventore quod aut exercitationem excepturi earum, veritatis nam molestias rem aspernatur possimus repudiandae animi eos illo et. Facere voluptatum aut blanditiis earum. Sit amet rem quisquam autem culpa, odit dolores officia asperiores eum optio, architecto sed aliquam natus, inventore adipisci ullam eius iusto velit in temporibus! Corporis est perspiciatis possimus? Voluptates suscipit odio dolores asperiores eveniet nesciunt officia eum, ipsam veritatis excepturi nisi necessitatibus neque. Rerum reiciendis odit hic illo cupiditate sint accusamus aperiam similique quasi, repellat laudantium voluptatibus! Quas fuga ratione impedit assumenda, nemo accusamus commodi repellat necessitatibus inventore delectus natus neque, dolorum voluptas nisi iusto nobis doloribus corporis! Fugit voluptatem excepturi ex! Excepturi consectetur fugit porro accusantium eveniet doloremque libero quidem quos sunt voluptas harum quis perspiciatis qui laborum molestias temporibus asperiores aliquid, accusamus placeat iure eius quibusdam eaque? Inventore placeat recusandae dolores laboriosam facilis id est corporis culpa reprehenderit ipsa sunt temporibus similique libero, molestias nam voluptatum natus. Minus dignissimos esse ipsam ducimus consequuntur tenetur aspernatur ea beatae, aliquid deserunt non facere? Modi error iure, eveniet obcaecati ut quam unde temporibus impedit quis dolore quisquam officia maiores delectus consectetur asperiores consequuntur deleniti natus debitis hic odit ipsum. Quibusdam inventore possimus esse porro atque.</p>
+                <p>Tempora ipsa deleniti qui delectus quia quasi culpa asperiores aperiam repellendus inventore ratione dolor vitae laudantium illo, explicabo consectetur, blanditiis rem? Harum assumenda id illum voluptatum cum iusto magnam odio debitis aperiam autem dolorum, quam ullam nemo beatae! Voluptatibus laborum laboriosam consectetur? Earum alias ab, porro quaerat quos laboriosam, maxime perspiciatis libero consequatur tempora quisquam? Necessitatibus totam, optio vitae harum esse in beatae impedit ipsum. Repellendus dolore officiis consectetur quas veniam officia dignissimos optio placeat dolorem beatae, amet accusantium est reiciendis porro? Accusantium, sint eligendi alias natus commodi ullam aliquam numquam magni at suscipit possimus, quidem non dicta nisi unde sapiente consectetur! Iure a eligendi, nam suscipit est aperiam sed eum aut! Perspiciatis error ullam hic minus ipsam alias nihil voluptates praesentium laboriosam, ab incidunt tempore dignissimos quo recusandae quis tempora, sapiente autem distinctio commodi nulla tenetur reprehenderit soluta eaque aperiam. Temporibus cupiditate, inventore ea labore repellat architecto quasi ipsam tenetur voluptas? Culpa, deleniti voluptates. Cum odit porro ab commodi doloribus voluptates modi a pariatur consectetur quisquam suscipit vitae dolorum numquam non voluptatibus amet accusamus ipsum architecto unde esse, reiciendis tempore atque tempora sint? Hic sunt, inventore laudantium earum consequatur officia placeat perspiciatis deserunt eius ad. Voluptatem debitis quod impedit quos quam nulla odio et eligendi, itaque reprehenderit atque sed ducimus laboriosam sint maxime magni est voluptatum in natus dolore adipisci! Temporibus exercitationem aspernatur earum, deleniti laborum, veritatis dignissimos consequuntur, nemo blanditiis optio eius? Aliquam fugit vitae commodi est beatae maxime iste suscipit ducimus, laudantium sequi, itaque fugiat sunt atque autem ab perferendis dolorem laborum repellendus voluptas eaque qui officiis aut. Ex fuga porro, id quibusdam beatae mollitia minima facere cumque! Voluptatum nesciunt consectetur nemo, nihil illum, eaque esse nisi beatae deleniti maxime ipsa commodi ratione maiores voluptates labore, quidem quis in et repudiandae impedit. Laudantium molestiae reiciendis inventore molestias?</p>  
+            </div>
+          </div>
+        </div>
+    </main>
+
+    <footer class="global-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3 class="global-footer-title">
+              고객센터
+              <i class="ic-chevron" aria-hidden></i>
+            </h3>
+            <a class="global-footer-contact" href="tel:10041004">1004-1004</a>
+            <p class="global-footer-time">평일 09:00 ~ 18:00 (주말 &amp; 공휴일 제외)</p>
+      
+            <dl class="global-footer-detail-list">
+                <div class="global-footer-detail-item">
+                  <dt>상호명</dt>
+                  <dd>버그가 너무 많아 김버그</dd>
+                </div>
+                <div class="global-footer-detail-item">
+                  <dt>이메일</dt>
+                  <dd>
+                    <address><a href="mailto:kimbugx@gmail.com">kimbugx@gmail.com</a>(제휴문의)</address>
+                  </dd>
+                </div>
+                <div class="global-footer-detail-item">
+                  <dt>대표이사</dt>
+                  <dd>김버그</dd>
+                </div>
+                <div class="global-footer-detail-item">
+                  <dt>주소</dt>
+                  <dd>
+                    <address>
+                      <a href="mailto:https://www.youtube.com/c/kimbug" target="_blank">
+                        https://www.youtube.com/c/kimbug
+                      </a>
+                    </address>
+                    </dd>
+                </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <aside class="sidebar sm-only">
       <header class="sidebar-header">
@@ -148,7 +291,28 @@
       <nav class="sidebar-nav">
         <h2 class="visually-hidden">메뉴</h2>
 
-        <div class="drawer-menu">
+        <div class="drawer-menu is-community">
+          <button class="drawer-menu-button" type="button">
+            <i class="ic-community" area-hidden></i> 
+            커뮤니티
+            <i class="ic-chevron" area-hidden></i>
+          </button>
+          
+          <div class="drawer-menu-content">
+            <ul class="drawer-menu-list">
+              <li class="drawer-menu-item"><a href="/">홈</a></li>
+              <li class="drawer-menu-item"><a href="/">사진</a></li>
+              <li class="drawer-menu-item"><a href="/">집들이</a></li>
+              <li class="drawer-menu-item"><a href="/">노하우</a></li>
+              <li class="drawer-menu-item"><a href="/">전문가집들이</a></li>
+              <li class="drawer-menu-item"><a href="/">셀프가이드</a></li>
+              <li class="drawer-menu-item"><a href="/">질문과답변</a></li>
+              <li class="drawer-menu-item"><a href="/">이벤트</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="drawer-menu is-active is-open is-store">
           <button class="drawer-menu-button" type="button">
             <i class="ic-store" area-hidden></i> 
             스토어
@@ -160,12 +324,32 @@
               <li class="drawer-menu-item"><a href="/">스토어</a></li>
               <li class="drawer-menu-item"><a href="/">카테고리</a></li>
               <li class="drawer-menu-item"><a href="/">신혼가구</a></li>
+              <li class="drawer-menu-item"><a href="/">베스트</a></li>
+              <li class="drawer-menu-item"><a href="/">오늘의딜</a></li>
+              <li class="drawer-menu-item"><a href="/">연휴특가</a></li>
+              <li class="drawer-menu-item"><a href="/">월동준비</a></li>
+              <li class="drawer-menu-item"><a href="/">리퍼마켓</a></li>
               <li class="drawer-menu-item">
                 <a href="/">
                   기획전
                   <i class="ic-new" lang="en" area-label="New"></i> 
                 </a>
               </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="drawer-menu is-expert">
+          <button class="drawer-menu-button" type="button">
+            <i class="ic-expert" area-hidden></i> 
+            인테리어시공
+            <i class="ic-chevron" area-hidden></i>
+          </button>
+          
+          <div class="drawer-menu-content">
+            <ul class="drawer-menu-list">
+              <li class="drawer-menu-item"><a href="/">시공홈</a></li>
+              <li class="drawer-menu-item"><a href="/">시공스토어</a></li>
             </ul>
           </div>
         </div>
@@ -194,5 +378,110 @@
       </nav>
 
     </aside>
+
+    <aside class="search-modal lg-hidden">
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+              <header class="search-modal-header">
+                <h1 class="visually-hidden">검색창</h1>
+                <div class="search-modal-form">
+                      <div class="input-group">
+                        <i class="ic-search" aria-hidden></i>   
+                        <input type="text" class="form-input" placeholder="스토어검색">
+                        
+                      </div>
+                      
+                      <section class="search-history">
+                        <header class="search-history-header">
+                          <h2 class="title">최근 검색어</h2>
+                          <button type="button">전체 삭제</button>
+                
+                        </header>
+                
+                          <!--최근 검색어가 존재 할 경우 -->
+                        <div class="search-history-content">
+                          <ol class="search-history-list">
+                            <li class="search-history-item">
+                              <button class="word-button" type="button">김버그</button>
+                              <button class="delete-button" type="button" aria-label="검색어 삭제">
+                                <i class="ic-close"></i>
+                              </button>
+                            </li>
+                            <li class="search-history-item">
+                              <button class="word-button" type="button">버그</button>
+                              <button class="delete-button" type="button" aria-label="검색어 삭제">
+                                <i class="ic-close"></i>
+                              </button>
+                            </li>
+                            <li class="search-history-item">
+                              <button class="word-button" type="button">튕김버그</button>
+                              <button class="delete-button" type="button" aria-label="검색어 삭제">
+                                <i class="ic-close"></i>
+                              </button>
+                            </li>
+                          </ol>
+                        </div>
+                
+                          <!--최근 검색어가 존재하지 않을 경우 -->
+                          <!-- <div class="search-history-content">
+                            <p class="placeholder">최근 검색한 내역이 없습니다.</p>
+                          </div> -->
+                      </section>
+
+                  <button class="btn-ghost btn-40" type="button">취소</button>
+                </div>
+
+                
+                   
+              </header>
+        
+              <section class="search-history">
+                <header class="search-history-header">
+                  <h2 class="title">최근 검색어</h2>
+                  <button type="button">전체 삭제</button>
+        
+                </header>
+        
+                  <!--최근 검색어가 존재 할 경우 -->
+                <div class="search-history-content">
+                  <ol class="search-history-list">
+                    <li class="search-history-item">
+                      <button class="word-button" type="button">김버그</button>
+                      <button class="delete-button" type="button" aria-label="검색어 삭제">
+                        <i class="ic-close"></i>
+                      </button>
+                    </li>
+                    <li class="search-history-item">
+                      <button class="word-button" type="button">버그</button>
+                      <button class="delete-button" type="button" aria-label="검색어 삭제">
+                        <i class="ic-close"></i>
+                      </button>
+                    </li>
+                    <li class="search-history-item">
+                      <button class="word-button" type="button">튕김버그</button>
+                      <button class="delete-button" type="button" aria-label="검색어 삭제">
+                        <i class="ic-close"></i>
+                      </button>
+                    </li>
+                  </ol>
+                </div>
+        
+                  <!--최근 검색어가 존재하지 않을 경우 -->
+                  <!-- <div class="search-history-content">
+                    <p class="placeholder">최근 검색한 내역이 없습니다.</p>
+                  </div> -->
+              </section>
+            </div>
+        </div>
+      </div>
+
+    </aside>
+ 
+
+    <div class="overlay" aria-hidden>
+
+    </div>
+
  </body>
 </html>

@@ -5,7 +5,9 @@
 
     &-wrapper{
         @include flexbox(between);
-        height: $gnb-height-sm - 1px;
+
+        height: $gnb-height-md - 1px;
+
 
     }
 

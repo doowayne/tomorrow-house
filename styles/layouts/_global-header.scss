@@ -12,10 +12,12 @@
 
     .gnb {
         top: 0;
+        z-index: $gnb-level;
     }
 
     .lnb {
         top: 50px;
+        z-index: $lnb-level;
     }
 
 

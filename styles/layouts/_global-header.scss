@@ -16,7 +16,7 @@
     }
 
     .lnb {
-        top: 50px;
+        top: $gnb-height-sm;//50px;
         z-index: $lnb-level;
     }
 

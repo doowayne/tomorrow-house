@@ -47,10 +47,61 @@
             display: none;
         }
     }
-
+ 
     img {
         display: block;
         width: 100%; 
         height: auto;
+       }
+
+
+/*TABLET 사이즈*/
+       @include responsive(T) {
+            padding-right: 30px;
+
+            &-slider {
+                margin: 0 0 8px 0;
+                border-radius: 4px;
+                overflow: hidden;
+            }
+
+            &-thumbnail {
+                position: static;
+                transform: none;
+            }
+
+            .thumbnail-list {
+                justify-content: flex-start;
+            }
+
+            .thumbnail-item {
+                margin: 0 8px 0 0;
+
+                &.tns-nav-active {
+
+                    button {
+                         border: 2px solid $blue;
+                         transform: none;
+                    }
+                }
+
+                button {
+                    @include flexbox(center);
+                    width: 56px;
+                    height: 56px;
+                    border-radius: 4px;
+                    overflow: hidden;
+                    opacity: 1;
+                }
+
+                img {
+                    display: block;
+                    width: 56px;
+
+                    
+                }
+            }    
+         
+            
        }
   }
